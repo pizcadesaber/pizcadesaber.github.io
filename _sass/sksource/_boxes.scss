@@ -1,0 +1,96 @@
+.sk.box.math {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.sk.box.math span.title {
+    font-weight: bold;
+}
+
+.sk.box.math ol li {
+    list-style-type: upper-roman;
+}
+
+.sk.box.math.d::before {
+    font-weight: bold;
+    content: "Definición. ";
+}
+
+.sk.box.math.d {
+    width: auto;
+    border-left: 5px solid #3ac0e9;
+}
+
+.sk.box.math.d strong {
+    font-weight: normal;
+    color: #ff601c;
+}
+
+.sk.box.math.l::before {
+    font-weight: bold;
+    content: "Lema. ";
+}
+
+.sk.box.math.l {
+    width: auto;
+    border-left: 5px solid #41b65e;
+}
+
+.sk.box.math.l strong {
+    color: #ff9b17;
+}
+
+.sk.box.math.t::before {
+    font-weight: bold;
+    content: "Teorema. ";
+}
+
+.sk.box.math.t {
+    width: auto;
+    border-left: 5px solid #436585;
+}
+
+.sk.box.math.t strong {
+    color: #ff9b17;
+}
+
+.sk.box.math.c::before {
+    font-weight: bold;
+    content: "Corolario. ";
+}
+
+.sk.box.math.c {
+    width: auto;
+    border-left: 5px solid #4c5972;
+}
+
+.sk.box.math.c strong {
+    color: #ff9b17;
+}
+
+/* Proof style */
+
+.sk.math.p {
+    width: auto;
+    border-left: 7px solid #00cafa;
+    padding-left: 7px;
+    margin: 20px;
+}
+
+.sk.math.p strong {
+    color: #ff9b17;
+}
+
+.sk.box.example {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: auto;
+    border-left: 5px solid #aa5a8b;
+    padding-left: 5px;
+}
+
+.sk.box.example::before {
+    font-weight: bold;
+    content: "Ejemplo. ";
+}

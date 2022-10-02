@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /** Reset some basic elements */
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
@@ -194,3 +195,108 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vg { color: #008080; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
+
+.sk.box.math { margin-top: 20px; margin-bottom: 20px; padding-left: 5px; }
+
+.sk.box.math span.title { font-weight: bold; }
+
+.sk.box.math ol li { list-style-type: upper-roman; }
+
+.sk.box.math.d::before { font-weight: bold; content: "Definición. "; }
+
+.sk.box.math.d { width: auto; border-left: 5px solid #3ac0e9; }
+
+.sk.box.math.d strong { font-weight: normal; color: #ff601c; }
+
+.sk.box.math.l::before { font-weight: bold; content: "Lema. "; }
+
+.sk.box.math.l { width: auto; border-left: 5px solid #41b65e; }
+
+.sk.box.math.l strong { color: #ff9b17; }
+
+.sk.box.math.t::before { font-weight: bold; content: "Teorema. "; }
+
+.sk.box.math.t { width: auto; border-left: 5px solid #436585; }
+
+.sk.box.math.t strong { color: #ff9b17; }
+
+.sk.box.math.c::before { font-weight: bold; content: "Corolario. "; }
+
+.sk.box.math.c { width: auto; border-left: 5px solid #4c5972; }
+
+.sk.box.math.c strong { color: #ff9b17; }
+
+/* Proof style */
+.sk.math.p { width: auto; border-left: 7px solid #00cafa; padding-left: 7px; margin: 20px; }
+
+.sk.math.p strong { color: #ff9b17; }
+
+.sk.box.example { margin-top: 20px; margin-bottom: 20px; width: auto; border-left: 5px solid #aa5a8b; padding-left: 5px; }
+
+.sk.box.example::before { font-weight: bold; content: "Ejemplo. "; }
+
+.eq { overflow-x: auto; display: block; }
+
+@font-face { font-family: "Computer Modern"; src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunss.otf"); }
+@font-face { font-family: "Computer Modern"; src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsx.otf"); font-weight: bold; }
+@font-face { font-family: "Computer Modern"; src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunsi.otf"); font-style: italic, oblique; }
+@font-face { font-family: "Computer Modern"; src: url("http://mirrors.ctan.org/fonts/cm-unicode/fonts/otf/cmunbxo.otf"); font-weight: bold; font-style: italic, oblique; }
+article { font-family: "Computer Modern Sans"; font-size: 19px; }
+
+dl { display: block; box-sizing: border-box; border-left: solid 5px; border-right: solid 5px; border-radius: 5px; width: 100%; }
+
+dl dt { display: inline-block; font-weight: bold; border-bottom: solid 2px; padding-left: 5px; padding-right: 5px; }
+
+dl dd { display: block; padding-left: 5px; padding-right: 5px; }
+
+dl dd ol { list-style: none; counter-reset: li; }
+
+dl dd ol li { counter-increment: li; }
+
+dl dd ol li::before { content: "(" counter(li,upper-roman); font-weight: bold; display: inline-block; width: 1em; margin-left: -1.5em; margin-right: 0.5em; text-align: right; direction: rtl; }
+
+dl.ol-number dd ol li::before { content: "." counter(li); }
+
+dl.ol-alpha dd ol li::before { content: "(" counter(li,lower-alpha); }
+
+dl.d { background-color: #e9f9fc; }
+
+dl.d, dl.d dt { border-color: #1fbbeb; }
+
+dl.d dt, dl.d dd ol li::before { color: #1fbbeb; }
+
+dl.d dd strong { color: #ff601c; }
+
+dl.l { background-color: #e0fae8; }
+
+dl.l, dl.l dt { border-color: #41b65e; }
+
+dl.l dt, dl.l dd ol li::before { color: #41b65e; }
+
+dl.t { background-color: #e7f4ff; }
+
+dl.t, dl.t dt { border-color: #136ec4; }
+
+dl.t dt, dl.t dd ol li::before { color: #136ec4; }
+
+dl.c { background-color: #e7f4ff; }
+
+dl.c, dl.c dt { border-color: #136ec4; }
+
+dl.c dt, dl.c dd ol li::before { color: #136ec4; }
+
+dl.r { background-color: #e6e6e6; }
+
+dl.r, dl.r dt { border-color: #494949; }
+
+dl.r dt, dl.r dd ol li::before { color: #494949; }
+
+dl.r dd ol li::before { content: "." counter(li); }
+
+dl.e { background-color: #fde2f3; }
+
+dl.e, dl.e dt { border-color: #d63d9c; }
+
+dl.e dt, dl.e dd ol li::before { color: #d63d9c; }
+
+dl.e dd ol li::before { content: "(" counter(li,lower-alpha); }

@@ -1,0 +1,51 @@
+//common
+dl {display:block;box-sizing:border-box;border-left:solid 5px;border-right:solid 5px;border-radius:5px;width:100%;}
+dl dt {display:inline-block;font-weight:bold;border-bottom:solid 2px;padding-left:5px;padding-right:5px}
+dl dd {display:block;padding-left:5px;padding-right:5px;}
+dl dd ol {list-style:none;counter-reset:li}
+dl dd ol li {counter-increment:li}
+dl dd ol li::before{content:"("counter(li,upper-roman);font-weight:bold;display:inline-block;width:1em;margin-left:-1.5em;margin-right:0.5em;text-align:right;direction:rtl}
+//list number
+dl.ol-number dd ol li::before{content:"."counter(li);}
+//list alpha
+dl.ol-alpha dd ol li::before{content:"("counter(li,lower-alpha);}
+//definition
+$definition-color:#1fbbeb;
+$lemma-color-light:#e9f9fc;
+dl.d {background-color:$lemma-color-light;}
+dl.d, dl.d dt{border-color:$definition-color;}
+dl.d dt, dl.d dd ol li::before{color:$definition-color;}
+dl.d dd strong {color:#ff601c;}
+//lemma
+$lemma-color:#41b65e;
+$lemma-color-light:#e0fae8;
+dl.l {background-color:$lemma-color-light}
+dl.l, dl.l dt {border-color:$lemma-color;}
+dl.l dt, dl.l dd ol li::before{color:$lemma-color;}
+//theorem
+$theorem-color:#136ec4;
+$theorem-color-light:#e7f4ff;
+dl.t {background-color:$theorem-color-light}
+dl.t, dl.t dt {border-color:$theorem-color;}
+dl.t dt, dl.t dd ol li::before{color:$theorem-color;}
+//corollary
+$corollary-color:#136ec4;
+$corollary-color-light:#e7f4ff;
+dl.c {background-color:$corollary-color-light}
+dl.c, dl.c dt {border-color:$corollary-color;}
+dl.c dt, dl.c dd ol li::before{color:$corollary-color;}
+//proof
+//remark
+$remark-color:#494949;
+$remark-color-light:#e6e6e6;
+dl.r {background-color:$remark-color-light}
+dl.r, dl.r dt {border-color:$remark-color;}
+dl.r dt, dl.r dd ol li::before{color:$remark-color;}
+dl.r dd ol li::before{content:"."counter(li);}
+//example
+$example-color:#d63d9c;
+$example-color-light:#fde2f3;
+dl.e {background-color:$example-color-light}
+dl.e, dl.e dt {border-color:$example-color;}
+dl.e dt, dl.e dd ol li::before{color:$example-color;}
+dl.e dd ol li::before{content:"("counter(li,lower-alpha);}
