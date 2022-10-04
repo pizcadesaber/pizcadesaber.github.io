@@ -21,7 +21,7 @@ Teorema
 2. \\(0\\leq r<\|b\|.\\)
 {: .t}
 
-Demostración
+<!--Demostración
 : Esta demostración la dividiremos en dos partes. Por un lado, la existencia de los enteros \\(q\\) y \\(r,\\) y por otro, la unicidad.
 - **Existencia.** Observemos que se puede reducir la demostración de la existencia al caso \\(a\\geq 0\\) y \\(b > 0,\\) teniendo en cuenta lo siguiente:
 > - Si \\(b<0,\\) entonces al considerar \\(b'=-b\\) y \\(q'=-q\\), la ecuación \\(a=bq+r\\) se puede escribir como \\(a=b'q'+r\\) y la desigualdad \\(0\\leq r < \|b\|\\) como \\(0\\leq r < \|b'\|.\\) Esto reduce la existencia del caso \\(b<0\\) al caso \\(b>0.\\)
@@ -49,4 +49,4 @@ b(q – q′) = 0.
 Teorema
 : Todo número natural se puede expresar en cualquier base \\(b\\) de manera única, es decir, para todo \\(n\\in\\mathbb{N}\\), existe \\(r\\in\\mathbb{N}\\) y \\(a\_1,\\ldots,a\_n\\in\\mathbb{N}\\) satisfaciendo \\(0\\leq a\_i< b\\) para todo \\(i\\in\\{0,1,\\ldots,n\\}\\) y
 *\\[n=\\sum\_{i=1}^ra\_ib^i. \\]*{: .eq}
-{: .t}
+{: .t}-->
