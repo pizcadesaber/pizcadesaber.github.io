@@ -12,3 +12,5 @@ permalink: /art/3d-modeling/
         {% endif %}
     {% endfor %}
 </ul>
+
+Mi programa favorito para modelar en 3D es [Blender](https://www.blender.org) (open source).
