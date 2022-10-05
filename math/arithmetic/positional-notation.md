@@ -44,9 +44,9 @@ r′ – r = 0,
 >and
 b(q – q′) = 0.
 >Since b ≠ 0, we get that r = r′ and q = q′, which proves the uniqueness part of the Euclidean division theorem.
-{: .p}
+{: .p}-->
 
 Teorema
 : Todo número natural se puede expresar en cualquier base \\(b\\) de manera única, es decir, para todo \\(n\\in\\mathbb{N}\\), existe \\(r\\in\\mathbb{N}\\) y \\(a\_1,\\ldots,a\_n\\in\\mathbb{N}\\) satisfaciendo \\(0\\leq a\_i< b\\) para todo \\(i\\in\\{0,1,\\ldots,n\\}\\) y
 *\\[n=\\sum\_{i=1}^ra\_ib^i. \\]*{: .eq}
-{: .t}-->
+{: .t}
